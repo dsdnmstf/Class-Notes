@@ -1,0 +1,62 @@
+
+body {
+    font-weight: 500;
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    
+}
+nav .left,
+nav .middle,
+nav .right {
+    flex-basis: 0;
+}
+
+nav .left {
+    background-color: rgb(117, 111, 111);
+    flex-grow: 1;
+    
+}
+nav .middle {
+    background-color: lightblue;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+nav .right {
+    background-color: rgb(107, 107, 250);
+    flex-grow: 1;
+    text-align: right;
+}
+nav .middle a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px;
+    color: black;
+    
+}
+i {
+    font-size: 40px;
+    
+}
+nav .middle a:hover {
+background-color: yellowgreen;
+}
+
+
+
+
+
+
+
+
+
+
+nav div.left a img {
+    width: 40px;
+}

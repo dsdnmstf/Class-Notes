@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container1 {
+  background-color: antiquewhite;
+  display: flex;
+  /*! Elemanların diziliş yönü : column, row, row-reverse, column-reverse*/
+  flex-direction: row;
+
+  /*? sıkıştırma veya alt satıra geçebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
+  flex-wrap: wrap;
+
+  /*! Yatay Hizalama: Justify-center
+  /** flex-start, flex-end,center, space-around,space-evenly, space-between */
+  justify-content: space-around;
+}
+
+.container1 div {
+  width: 5rem;
+  height: 5rem;
+  background-color: tomato;
+  margin: 1rem;
+  /* margin: 1rem auto;*/
+}
+
+.container2 {
+  height: 20rem;
+  background-color: pink;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  /*! Dikey Hizalama => align-items
+  /**  flex-start, flex-end,center, stretch,baseline */
+  align-items: stretch;
+}
+
+/** bir child element stretch ile container'ın sınırlarına dayandığında child'in içerisindeki içeriği (Örn yazı) yine dikey olarak ortaya hizalamak için nested flex yapısı kullanılabilir*/
+
+.container2 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  width: 5rem;
+  margin: 0 1rem;
+}
+
+ul {
+  height: 30rem;
+  background-color: darkgray;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-items: flex-start; */
+  align-content: flex-start;
+}
+ul li {
+  width: 4rem;
+  height: 4rem;
+  background-color: violet;
+  margin: 1rem;
+}
+
+ul li {
+    width: 4rem;
+    height: 4rem;
+    background-color: violet;
+    margin: 1rem;
+    /* flex-basis: 0; */
+}
+ul li.grow {
+    flex-grow: 2;
+}
+
+.container3 {
+
+}
+.container3 div
+.ana {
+    display: flex;
+    justify-content: flex-start;
+}
