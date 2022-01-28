@@ -1,62 +1,68 @@
+/**Renk temasını import ettik*/
+@import 'color-theme.css';
 
 body {
-    font-weight: 500;
-    margin: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-monteserrat);
+  font-weight: 600;
 }
+
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0.5rem;
-    
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
 }
+
 nav .left,
 nav .middle,
 nav .right {
-    flex-basis: 0;
+  /**elemanların büyümesine izin ver*/
+  flex-grow: 1;
+
+  /*!Tüm elemanların eşit miktarda alan tutabilmesine izin ver.*/
+  flex-basis: 0;
 }
 
 nav .left {
-    background-color: rgb(117, 111, 111);
-    flex-grow: 1;
-    
+  background-color: var(--gri-8);
+  box-shadow: var(--açık-gölge);
 }
+nav .left img {
+  width: 40px;
+  height: 40px;
+}
+
 nav .middle {
-    background-color: lightblue;
-    flex-grow: 1;
-    text-align: center;
-    border-radius: 10px;
-    
+  text-align: center;
+  background-color: var(--mavi-10);
+  box-shadow: var(--koyu-gölge);
+  border-radius: 10px;
 }
+nav .middle .item {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px;
+  color: var(--siyah);
+  transition: background-color 1s, color 1s;
+}
+
+nav .middle .item:hover {
+  background-color: var(--mavi-5);
+  border-radius: 10px;
+  color: var(--beyaz);
+}
+
 nav .right {
-    background-color: rgb(107, 107, 250);
-    flex-grow: 1;
-    text-align: right;
+  text-align: right;
+  background-color: var(--mavi-7);
+  box-shadow: var(--açık-gölge);
 }
-nav .middle a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 16px;
-    color: black;
-    
+nav .right i {
+  color: var(--siyah);
+  font-size: 40px;
+  transition: font-size 0.5s;
 }
-i {
-    font-size: 40px;
-    
-}
-nav .middle a:hover {
-background-color: yellowgreen;
-}
-
-
-
-
-
-
-
-
-
-
-nav div.left a img {
-    width: 40px;
+nav .right i:hover {
+  font-size: 60px;
 }

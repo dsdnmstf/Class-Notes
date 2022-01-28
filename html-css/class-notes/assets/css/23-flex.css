@@ -55,33 +55,48 @@ ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  /* align-items: flex-start; */
+  justify-content: center;
+
+  /*?gap, flex içerisindeki elemanların dikey ve yatay boşluklarını belirlemek için kullanılabilir. ilk yazılan yatay (satırlar arası) boşluk, 2. yazılan ise dikey (sutunlar arası) boşluktur */
+  gap: 6rem 2rem;
+
+  /*!Çok satırlı verilerin dikeyde hizanmalmas için kullanılır.*/
   align-content: flex-start;
+  /* align-items: flex-start; */
 }
 ul li {
   width: 4rem;
   height: 4rem;
   background-color: violet;
-  margin: 1rem;
-}
-
-ul li {
-    width: 4rem;
-    height: 4rem;
-    background-color: violet;
-    margin: 1rem;
-    /* flex-basis: 0; */
-}
-ul li.grow {
-    flex-grow: 2;
+  /* margin: 1rem; */
 }
 
 .container3 {
-
+  background-color: rgb(235, 37, 70);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.container3 div
-.ana {
-    display: flex;
-    justify-content: flex-start;
+
+.container3 div {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(100, 237, 100);
+  width: 5rem;
+  margin: 1rem 1rem;
+  /*? tüm div'lerin büyüme oranına 1 verdik. classindakiler diğerlerine göre 2 kat daha fazla büyüyebilir.*/
+  flex-grow: 1;
+}
+
+div.grow2 {
+  /*? grow2 classindakiler diğerlerine göre 2 kat daha fazla büyüyebilir.*/
+  flex-grow: 2;
+}
+div.grow3 {
+  /*? grow3 classindakiler diğerlerine göre 3 kat daha fazla büyüyebilir.*/
+  flex-grow: 3;
+}
+div.nogrow {
+  /*? nogrow classindakiler diğerlerine göre hiç büyümezler*/
+  flex-grow: 0;
 }

@@ -1,39 +1,49 @@
 .yazi {
   text-align: center;
-  width: 30vw;
+  width: 30vh;
   margin-bottom: 2rem;
+  font-size: 2rem;
+  margin: 2rem auto;
 }
 
-/* *************ROTATE***************** */
+/********************** ROTATE ********************/
 .yazi1 {
   background-color: aquamarine;
   transform: rotateX(180deg);
 }
 
-/* !  */
+/*! 90 ve 270 derecelerde yazılar tam dik olduklarından ve 3-boyutlu olarak bakamadığımız için gözükmezler */
+
 .yazi2 {
-  background-color: rgb(140, 25, 163);
+  background-color: rgb(253, 255, 127);
   transform: rotateY(180deg);
 }
+
+/*? rotate, Elementi saat yönünde ya da tersi istikamette döndürür. */
 .yazi3 {
-  background-color: rgb(184, 27, 40);
+  background-color: rgb(127, 204, 255);
   transform: rotate(-45deg);
+  /* transform: rotate(45deg); */
 }
+
+/********************** SCALE ********************/
 .yazi4 {
-  background-color: rgb(162, 223, 19);
+  background-color: rgb(234, 127, 255);
 }
 .yazi4:hover {
   transform: scaleX(0.5) scaleY(2);
 }
+
 .yazi5 {
-  background-color: rgb(155, 104, 104);
+  background-color: rgb(127, 255, 133);
 }
 .yazi5:hover {
-  transform: scale(2 0.5);
+  transform: scale(2, 0.5);
 }
-/* **********TRANSITION********** */
+
+/********************** TRANSITION ********************/
 .transition-div {
-    text-align: center;
+  text-align: center;
 }
 .btn {
   font-size: 2rem;
@@ -42,10 +52,9 @@
 }
 .btn:hover {
   background-color: burlywood;
-
-  color: yellow;
+  color: white;
 }
-/* *****TRANSLATE PRACTICE***** */
+/**************** TRANSLATE PRACTICE ******************/
 .transform {
   width: 100px;
   height: 50px;
@@ -54,7 +63,7 @@
   text-align: center;
   margin: 50px;
   padding: 10px;
-  transition: transform 2s;
+  transition: transform 1s;
 }
 .x:hover {
   transform: translateX(50px);
