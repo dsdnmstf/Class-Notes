@@ -9,3 +9,7 @@ List of projects within HTML & CSS Plus as follows;
 - [Project-003 :Parallax Web Site (HC-03)](./003-parallax-website/README.md)
 
 - [Project-004 :Sass Home Page (HC-04)](./004-Sass-Website/README.md)
+
+- [Project-005 :Bootstrap Project (HC-05)](./005-Bootstrap-project/README.md)
+
+- [Project-006 :Checkout Form (HC-05)](./006-checkout-form/README.md)
