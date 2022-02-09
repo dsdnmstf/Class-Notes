@@ -12,4 +12,6 @@ List of projects within HTML & CSS Plus as follows;
 
 - [Project-005 :Bootstrap Project (HC-05)](./005-Bootstrap-project/README.md)
 
-- [Project-006 :Checkout Form (HC-05)](./006-checkout-form/README.md)
+- [Project-006 :Checkout Form (HC-06)](./006-checkout-form/README.md)
+
+- [Project-007 :Website Page Design (HC-07)](./007-Website-Page-Design/README.md)
