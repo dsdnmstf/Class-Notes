@@ -90,7 +90,7 @@ languages.onkeydown = function (e) {
 };
 
 //? Focus to the language input when window is loaded,
-//? and run the startup functions like checkJavascriptStyle()
+//? and run the startup functions like checkJavascriptText()
 window.onload = () => {
   checkJavascriptText();
   //?focus on the languages input when window is loaded
