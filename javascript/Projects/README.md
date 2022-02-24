@@ -10,4 +10,6 @@ Javascript Workshop contains hands-on trainings and projects.
 
 - [004-Lottery-Game](./004-Lottery-Game/README.md)
 
+- [005-Checkout-Page](./005-Checkout-Page/README.md)
+
  
