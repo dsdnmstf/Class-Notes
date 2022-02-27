@@ -1,10 +1,9 @@
 body {
   text-align: center;
   font-family: sans-serif;
-  color: black;
   font-size: 0.8rem;
   height: 100vh;
-  background: linear-gradient(to top left, #2e619c, #c0ceee);
+  /* background: linear-gradient(to top left, #2e619c, #c0ceee); */
 }
 
 .logo {
