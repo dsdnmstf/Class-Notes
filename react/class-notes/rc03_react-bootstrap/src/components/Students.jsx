@@ -1,10 +1,10 @@
-import { Card,ListGroupItem, ListGroup } from "react-bootstrap";
+import { Card, ListGroupItem, ListGroup, Button } from "react-bootstrap";
 const Students = ({ data }) => {
   console.log(data);
   return (
     <div className="bg-success">
-      <h2 className="text-danger text-center">Our Students</h2>
-      <div className="container-fluid  mb-5 d-flex justify-content-center text-center gap-3">
+      <h2 className="text-danger text-center">Our Previous Students</h2>
+      <div className="container-fluid  mb-5 d-flex flex-wrap  justify-content-center text-center gap-3">
         {data.map((item) => {
           const { id, name, job, company, img } = item;
           return (
@@ -22,7 +22,7 @@ const Students = ({ data }) => {
                 <ListGroupItem>He works at {company}</ListGroupItem>
               </ListGroup>
               <Card.Body>
-                <Card.Link href="#">About him</Card.Link>
+                <Button variant="success">About him</Button>{" "}
               </Card.Body>
             </Card>
           );
