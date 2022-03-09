@@ -7,3 +7,9 @@ List of coding challenges within JavaScript workshop as follows;
 - [Fibonacci Numbers (CC-02)](./CC-02/README.pdf)
 
 - [Merge Arrays (CC-03)](./CC-03/README.md)
+
+- [Palindromic and Perfect Numbers Lists (CC-04)](./CC-04/README.md)
+
+- [Digital Clock  (CC-05)](./CC-05/README.md)
+
+- [Stopwatch (CC-06)](./CC-06/README.md)

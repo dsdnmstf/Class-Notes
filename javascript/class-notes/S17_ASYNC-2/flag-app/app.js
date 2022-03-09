@@ -11,6 +11,7 @@ const fetchCountry = async function (name) {
     throw new Error();
   }
   const data = await res.json();
+  console.log(data);
   renderCountry(data[0]);
 };
 
