@@ -1,21 +1,14 @@
-const my_style = {
-  position: "fixed",
-  bottom: "0",
-  left: "0",
-  right: "0",
-  textAlign: "center",
-  background: "black",
-  color: "white",
-  display: "flex",
-  justifyContent: "center",
-  paddingTop: "0.5rem",
-};
-const Footer = () => {
+import React from "react";
+import { Navbar } from "react-bootstrap";
+
+function Footer() {
   return (
-    <footer style={my_style}>
-        <p>Copyright by Mustafa {new Date().getFullYear()}</p>
-    </footer>
-  )
+    <div style={{ marginTop: "10rem" }}>
+      <Navbar fixed="bottom" className="justify-content-center bg-dark p-4">
+        <p className="text-light">Copyright {new Date().getFullYear()}</p>
+      </Navbar>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
