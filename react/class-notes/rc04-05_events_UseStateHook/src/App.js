@@ -3,6 +3,8 @@ import Counter from "./2-classComponents/Counter";
 import Hooks from "./3-hooks/Hooks";
 import Form from "./4-forms/Form";
 import FormObject from "./4-forms/FormObject";
+import MouseEvent from "./5-mouseEvents/MouseEvent";
+import KeyboardEvents from "./6-keyboardEvents/KeyboardEvents";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Hooks />
       <Form />
       <FormObject />
+      <MouseEvent />
+      <KeyboardEvents />
     </div>
   );
 }

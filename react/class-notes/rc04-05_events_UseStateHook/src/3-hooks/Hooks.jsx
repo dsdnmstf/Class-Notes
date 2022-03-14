@@ -10,9 +10,9 @@ import React, { useState } from "react";
 
 //* Hook Usage Rules:
 //* 1. First, we must import.
-//* 2. Only call Hooks at the top level. Don't call Hooks inside loops,
+//* 2. Only call Hooks at the top level. Don’t call Hooks inside loops,
 //*    conditions, or nested functions.
-//* 3. Only call Hooks from React function components. Don't call Hooks
+//* 3. Only call Hooks from React function components. Don’t call Hooks
 //*    from regular JavaScript functions.
 //*    (There is just one other valid place to call Hooks
 //* =====================================================================
@@ -29,8 +29,7 @@ const Hooks = () => {
     email: "john@gmail",
     age: 30,
   });
-  const [toggle, setToggle] = useState(false);
-  
+  // const [toggle, setToggle] = useState(false);
 
   const handleInc = () => {
     setCount(count + 1);
@@ -58,8 +57,8 @@ const Hooks = () => {
   //       });
   // };
   const handleUpdate = () => {
-    setInfo({...info, age:info.age + 1})
-  }
+    setInfo({ ...info, age: info.age + 1 });
+  };
 
   return (
     <div className="container text-center mt-4">
