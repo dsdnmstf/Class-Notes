@@ -1,9 +1,13 @@
+// ?=========================================================
+// ?                   NAVBAR CSS
+// ?=========================================================
+
 @import "../../scss/variables", "../../scss/mixins";
+
 .navbar {
   display: flex;
   justify-content: space-evenly;
   background-color: $cardNavBgColor;
-  //   gap: 1.2rem;
   a {
     font-size: 2rem;
     padding: 1rem 0;
@@ -17,6 +21,7 @@
   }
 }
 
+//* ==================  RESPOSIVE ==========================
 @include media-xsm {
   .navbar {
     flex-direction: column;
@@ -25,11 +30,13 @@
       padding: 0.3rem;
       &:last-child {
         &:hover {
-          // border-bottom: 3px solid black;
           box-shadow: 1px 1px 5px 1px $shadowColor;
         }
       }
     }
+  }
+  p {
+    font-size: 1rem;
   }
 }
 
@@ -45,6 +52,9 @@
       }
     }
   }
+  p {
+    font-size: 1.1rem;
+  }
 }
 
 @include media-md {
@@ -52,5 +62,8 @@
     a {
       font-size: 2.5rem;
     }
+  }
+  p {
+    font-size: 1.3rem;
   }
 }

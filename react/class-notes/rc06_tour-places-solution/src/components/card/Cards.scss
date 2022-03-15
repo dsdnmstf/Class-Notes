@@ -1,3 +1,7 @@
+// ?=========================================================
+// ?                    CARDS CSS
+// ?=========================================================
+
 @import "../../scss/variables";
 
 .card-container {
@@ -41,7 +45,6 @@
       .title {
         color: $backgroundColor;
       }
-
       .img-div {
         img {
           filter: grayscale(100%);
