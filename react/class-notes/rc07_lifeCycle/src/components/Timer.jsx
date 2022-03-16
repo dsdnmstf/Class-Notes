@@ -12,7 +12,16 @@ class Timer extends Component {
       this.setState({ time: this.state.time - 1 });
     }, 1000);
   }
-
+  componentDidUpdate(prevProps, prevState) {
+    // if (prevState.time === 1) {
+    if (this.state.time === 0) {
+      clearInterval(this.intervalId);
+    }
+  }
+  componentWillUnmount() {
+    console.log("Timer unmounted");
+    clearInterval(this.intervalId);
+  }
   render() {
     const { time } = this.state;
     console.log(time);
