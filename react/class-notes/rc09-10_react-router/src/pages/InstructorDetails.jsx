@@ -20,7 +20,7 @@ const InstructorDetails = () => {
       })
       .then((data) => setUser(data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   if (error) {
     return <NotFound />;
@@ -60,6 +60,8 @@ const InstructorDetails = () => {
 };
 
 export default InstructorDetails;
+
+//! state sharing with navigate and get state with useLocation
 
 // import { Container, Button } from "react-bootstrap";
 // import { useNavigate, useLocation } from "react-router-dom";
