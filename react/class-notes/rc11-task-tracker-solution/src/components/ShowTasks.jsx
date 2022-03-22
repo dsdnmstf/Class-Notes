@@ -1,6 +1,17 @@
 import { FaTimesCircle } from "react-icons/fa";
 
-function ShowTasks({ tasks, toggleDone, deleteTask }) {
+function ShowTasks({ tasks, setTasks }) {
+  const toggleDone = (id) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, isDone: !task.isDone } : task
+      )
+    );
+  };
+
+  const deleteTask = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
   return (
     <div>
       {tasks.map((task) => {
@@ -11,9 +22,14 @@ function ShowTasks({ tasks, toggleDone, deleteTask }) {
             key={id}
             onDoubleClick={() => toggleDone(id)}
           >
-            <h3>{text}</h3>
+            <h3>
+              {text}
+              <FaTimesCircle
+                style={{ color: "red" }}
+                onClick={() => deleteTask(id)}
+              />
+            </h3>
             <h6>{day}</h6>
-            <FaTimesCircle onClick={() => deleteTask(id)} />
           </div>
         );
       })}
