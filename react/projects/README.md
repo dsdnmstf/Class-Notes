@@ -9,3 +9,5 @@ List of projects within React workshop as follows;
 -[Recipe App RP-03](./003-Recipe-App-RP-03/README.md)
 
 -[Movie App RP-04](./004-Movie-App-RP-04/README.md)
+
+-[FireContact App RP-05](./005-Fire-Contact-RP-05/README.md)
