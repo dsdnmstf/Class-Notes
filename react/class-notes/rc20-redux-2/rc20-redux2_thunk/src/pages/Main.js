@@ -8,9 +8,12 @@ import {
   TableRow,
 } from "@mui/material";
 import { useEffect } from "react";
-import axios from "axios";
+
 import { useDispatch, useSelector } from "react-redux";
-import { getUserList } from "../App";
+import { getUserList } from "../redux/thunks/userThunk";
+
+// import { getUserList } from "../App";
+// import axios from "axios";
 // const fakeUserList = [
 //   { name: "Ed", username: "mred", email: "mred@mail.com" },
 //   { name: "Felix", username: "mrfelix", email: "mrfelix@mail.com" },
@@ -21,8 +24,11 @@ import { getUserList } from "../App";
 
 const Main = () => {
   const dispatch = useDispatch();
-  const loading = useSelector((state) => state.loading);
-  const userList = useSelector((state) => state.userList);
+  const { loading } = useSelector((state) => state.app);
+  const { userList } = useSelector((state) => state.user);
+
+  // const loading = useSelector((state) => state.loading);
+  // const userList = useSelector((state) => state.userList);
 
   // const getUserList = async () => {
   //   try {
