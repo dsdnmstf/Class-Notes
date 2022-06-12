@@ -1,7 +1,13 @@
+import UseRefComponent from "./components/UseRefComponent";
+import ReactMemoExample from "./ReactMemoExample";
+import UseMemoCallbackExample from "./UseMemoCallbackExample";
+
 function App() {
   return (
     <div className="App">
-      <h1>App</h1>
+      <UseMemoCallbackExample />
+      {/* <ReactMemoExample /> */}
+      {/* <UseRefComponent /> */}
     </div>
   );
 }

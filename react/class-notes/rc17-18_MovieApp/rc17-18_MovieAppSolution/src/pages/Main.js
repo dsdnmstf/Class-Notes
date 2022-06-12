@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useRef } from "react";
 import MovieCard from "../components/MovieCard";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
@@ -13,6 +13,7 @@ const Main = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const { currentUser } = useContext(AuthContext);
   const navigate = useNavigate();
+  const searchInputRef = useRef(null);
 
   const getMovies = (url) => {
     axios
@@ -39,18 +40,24 @@ const Main = () => {
       alert("Please enter your movie name");
     }
   };
+  const handleBtnClick = () => {
+    setSearchTerm(searchInputRef.current.value);
+  };
 
   return (
     <>
       <form className="search" onSubmit={handleFormSubmit}>
         <input
+          ref={searchInputRef}
           type="search"
           className="search-input"
           placeholder="Search a movie..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          // value={searchTerm}
+          // onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button type="submit">Search</button>
+        <button type="submit" onClick={handleBtnClick}>
+          Search
+        </button>
       </form>
       <div className="d-flex justify-content-center flex-wrap ">
         {movies.map((movie) => (

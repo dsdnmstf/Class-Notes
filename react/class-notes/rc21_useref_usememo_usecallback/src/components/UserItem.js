@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const UserItem = ({ user }) => {
-  console.log('Rendering: User Item Comp.');
+  console.log("Rendering: User Item Comp.");
   return (
     <div className="useritem">
       <img

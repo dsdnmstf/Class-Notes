@@ -13,3 +13,9 @@ List of coding challenges within JavaScript workshop as follows;
 - [Digital Clock  (CC-05)](./CC-05/README.md)
 
 - [Stopwatch (CC-06)](./CC-06/README.md)
+
+- [Bracket Validator (CC-07)](./CC-07/README.md)
+
+- [Sliding Window Maximum (CC-08)](./CC-08/README.md)
+
+- [Email Validation (CC-09)](./CC-09/README.md)
